@@ -1,0 +1,176 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid grey; */
+}
+body{
+    height: 100vh;
+    font-family: "Epilogue", sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+body *{
+  margin: 2px;
+  /* border: 1px solid grey; */
+}
+.attribution { font-size: 11px; text-align: center; margin-top: 80px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 25px;
+  margin-top: 10px;
+}
+.nav .nav-left{
+  display: flex;
+  gap: 35px;
+}
+.nav-aid{
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav img{
+    height: fit-content;
+    align-self: flex-end;
+}
+.nav .nav-logreg{
+    display: flex;
+    gap: 10px;
+}
+
+/* nav buttons */
+.nav button{
+    background-color: hsl(0, 0%, 98%);
+    border: none;
+    outline: none;
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+    padding: 10px 12px;
+    font-family: "Epilogue", sans-serif;
+    font-size: 12px;
+    font-weight: 550;
+}
+.nav .regbtn{
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+}
+.nav button:hover{
+    color: hsl(0, 0%, 8%);
+}
+.nav .regbtn:hover{
+    border: 2px solid hsl(0, 0%, 8%);
+}
+
+/* dropdown Menus */
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content-container{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: transparent;
+    margin-top: -2px;
+}
+.dropdown .features{ right: 0; }
+.dropdown .company{ left: 0; }
+.dropdown-content{
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content *{
+    margin: 0;
+}
+.dropdown-content a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    padding: 7px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+}
+.dropdown a:hover{
+    background-color: hsl(0, 0, 90%);
+    color: hsl(0, 0%, 8%);
+}
+.dropdown:hover .features{
+    display: block;
+    width: 130px;
+}
+.dropdown:hover .company{
+    display: block;
+    width: 105px;
+}
+
+/* Hero Section */
+.hero{
+    /* border: 1px solid grey; */
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.hero *{
+    /* border: 1px solid grey; */
+    margin: 0;
+}
+.hero .image{
+    background-image: url(./images/image-hero-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width: 35vw;
+}
+.hero .card{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 50px;
+}
+.card .hero-text{
+    font-size: 50px;
+    font-weight: 650;
+}
+.card p{
+    width: 28vw;
+    font-size: 12.8px;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    word-spacing: 2px;
+    line-height: 18px;
+}
+.hero button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 500;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.hero button:hover{
+    border: 2px solid hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+.hero .clients{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
